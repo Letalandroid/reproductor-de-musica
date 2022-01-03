@@ -103,3 +103,73 @@ h1 {
     background-color: #000;
     border-radius: 50%;
 }
+
+/* Corazón new 3/01/2021 */
+#heart {
+    appearance: none;
+    position: relative;
+    top: -350px;
+    right: -162px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    transform: rotate(45deg) scale(.18);
+    outline: 1px solid #000;
+}
+
+#heart:checked {
+    background-color: #f00;
+}
+
+#heart::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    top: 0px;
+    left: -40px;
+    border-radius: 50%;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+}
+
+#heart::after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    top: -125px;
+    right: 0;
+    border-radius: 50%;
+    border-top: 1px solid #000;
+}
+
+#heart:checked:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #f00;
+    top: 0px;
+    left: -40px;
+    border-radius: 50%;
+}
+
+#heart:checked:after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background-color: #f00;
+    top: -125px;
+    right: 0;
+    border-radius: 50%;
+}
